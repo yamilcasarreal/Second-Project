@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+
+  font-family: 'PT Sans', sans-serif;
+  background: lightgrey;
+  margin: 0;
+  /* width: 100%; */
+  /* padding: 0; */
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-nav li a {
+  /* margin-right: 1px;
+  margin-left: -50px; */
+  margin-top: 3px;
+  background: white;
+  display: block;
+  font-size: 2em;
+
+}
+.name {
+  padding-left: 32px;
+  font-size: 2.3em;
+
+}
+.main-nav {
+  padding: 0 15px;
+
+}
+.name,
+.main-nav{
+  text-align: center;
+  list-style-type: none;
+}
+
+.introduction {
+  padding-top: 50px;
+  text-align: center;
+}
+.introduction p {
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: grey;
+  font-size: 2em;
+
+
+}
+.portfolio-img {
+  width: 60%;
+  /* height: 500px; */
+}
+.content {
+  margin-top: 6em;
+  padding-top: 10em;
+  /* padding-left: 0; */
+  /* width: 100%; */
+  background: white;
+  text-align: center;
+}
+.content p {
+  font-size: 1em;
+  padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.content-name {
+  padding-bottom: 5em;
+}
+.search-page,
+.travel-app,
+.map-spots,
+.photo-gallery,
+.calculator {
+  margin-top: 125px;
+
+}
