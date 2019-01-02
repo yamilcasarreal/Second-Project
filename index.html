@@ -8,19 +8,21 @@
   </head>
   <body>
     <header class="main-header">
-    <div class="container">
+    <div class="container clearfix">
       <h1 class="name"> Yamil Casarreal </h1>
       <ul class="main-nav">
         <li><a href="#Home"> Home </a> </li>
         <li><a href="#Portfolio"> Portfolio </a> </li>
-        <li><a href="#Contact"> Contact </a> </li>
         <li><a href="#Skills"> Skills </a> </li>
+        <li><a href="#Contact"> Contact </a> </li>
+
+
       </ul>
     </div>
     </header>
 
     <div class="container">
-      <div class="introduction">
+      <div class="introduction clearfix">
           <img class="portfolio-img"src="images/responsive-layout-profile.png" alt="picture">
           <p> Hi! I'm a front-end developer who loves responsive design and css.
               I recently finished a degree in front-end  web development at
@@ -28,7 +30,8 @@
       </div>
 
       <div class="content">
-          <h2 class="content-name"> Portfolio </h2>
+          <h2 id="Portfolio" class="content-name"> Portfolio </h2>
+      <div class="wrap">
         <div class="marketing-page">
           <img src="images/portfolio-1.png" alt="marketing">
           <h1> Marketing Page </h1>
@@ -69,12 +72,12 @@
           <p>  Someone can enter in the numbers they want, and press the big blue button
                to get the result.</p>
         </div>
-
+      </div>
 
       </div> <!-- end of Content div -->
 
-    <div class="end-content">
-      <h1> Contact </h2>
+    <div id="Contact" class="end-content">
+      <h1> Contact </h1>
       <p> If you're interested in chatting or want more information
           about what I've been working on, I'd love to hear from you! </p>
       <p> Phone <span> +1(111) 555-1234 </span> </p>

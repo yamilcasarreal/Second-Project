@@ -9,12 +9,21 @@ body {
   /* width: 100%; */
   /* padding: 0; */
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 img {
   max-width: 100%;
 }
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.8s;
+}
+
+a:hover {
+  color: darkgrey;
 }
 .main-nav li a {
   /* margin-right: 1px;
@@ -107,16 +116,134 @@ footer {
   border-top: 2px solid grey;
   padding: 35px 15px;
   margin: 0 15px;
-}
-
-.footername, #backtotop {
-  display: inline-block;
+  /* flex-direction: row;
+  display: inline-block; */
+  /* text-align: center; */
 }
 #backtotop {
-  float: right;
+  float:right;
+  /* padding-bottom: 30px */
 }
+
+
+
+
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+@media (min-width: 768px) {
+  .container {
+    /* width: 90%; */
+    margin: 0 auto;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+  .main-nav li {
+    /* display: inline-block; */
+    text-align: center;
+    background: lightgrey;
+  }
+  .main-nav li a {
+    background: lightgrey;
+    padding: 0px 10px;
+    font-size: 1.9rem;
+  }
+  .introduction p {
+    padding: 0 25px;
+    margin: 0;
+    font-size: 2rem;
+    text-align: left;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  .portfolio-img {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    width: 40%;
+
+  }
+  .content {
+    background: white;
+
+  }
+  .content-name {
+    font-size: 4rem;
+    padding-bottom: 0rem;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .wrap p {
+    font-size: 1.5rem;
+  }
+.marketing-page {
+  margin-top: 125px;
+}
+.marketing-page,
+ .search-page,
+  .travel-app,
+  .map-spots,
+  .photo-gallery,
+  .calculator{
+  width: 50%;
+  /* display: inline-block; */
+}
+.wrap img {
+  width: 90%;
+}
+.end-content h1 {
+  font-size: 1.8rem;
+}
+.end-content p {
+  font-size: 1.3rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+  .name,
+  .main-nav {
+    flex-direction: row;
+    display: inline-block;
+  }
+  .main-nav {
+    float: right;
+  }
+  .main-nav li {
+    padding-top: 10px;
+    display: inline-block;
+  }
+  .introduction p {
+    font-size: 1.9rem;
+  }
+
+  .marketing-page,
+   .search-page,
+    .travel-app,
+    .map-spots,
+    .photo-gallery,
+    .calculator {
+    width: 33.3%;
+}
+  .content-name {
+    font-size: 2rem;
+  }
+  .wrap h1 {
+    font-size: 1.8rem;
+  }
+  .wrap p {
+    font-size: 1.2rem;
+  }
 }
