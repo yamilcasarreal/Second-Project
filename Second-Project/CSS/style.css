@@ -45,7 +45,7 @@ a {
   text-align: center;
 }
 .introduction p {
-  padding-top: .9em;
+  padding-top: 3em;
   padding-left: 1em;
   padding-right: 1em;
   color: grey;
@@ -54,28 +54,25 @@ a {
 
 }
 .portfolio-img {
-  width: 80%;
+  width: 60%;
   /* height: 500px; */
 }
 .content {
-  margin-top: 4rem;
-  /* padding-top: 1em; */
+  margin-top: 6em;
+  padding-top: 10em;
   /* padding-left: 0; */
   /* width: 100%; */
   background: white;
   text-align: center;
 }
-.content p,
-.end-content p {
-  font-size: 2rem;
-  /* padding-top: 1.5em; */
-  padding-left: .5em;
-  padding-right: .5em;
+.content p {
+  font-size: 1em;
+  padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 .content-name {
-  padding-bottom: 3.5rem;
-  padding-top: 7rem;
-  /* font-size: 2em; */
+  padding-bottom: 5em;
 }
 .search-page,
 .travel-app,
@@ -84,39 +81,4 @@ a {
 .calculator {
   margin-top: 125px;
 
-}
-
-.end-content {
-  /* background: lightgrey; */
-  text-align: center;
-  padding-top: 3rem;
-}
-.end-content p {
-  color: grey;
-}
-
-.calculator {
-  padding-bottom: 3rem;
-}
-span {
-  color: black;
-  font-weight: bold;
-}
-
-footer {
-  border-top: 2px solid grey;
-  padding: 35px 15px;
-  margin: 0 15px;
-}
-
-.footername, #backtotop {
-  display: inline-block;
-}
-#backtotop {
-  float: right;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
 }
