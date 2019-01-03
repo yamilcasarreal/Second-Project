@@ -115,6 +115,10 @@ a:hover {
 .skills {
   margin: auto;
 }
+
+.skills ul {
+  padding-right: 34px;
+}
 .end-content {
   /* background: lightgrey; */
   text-align: center;
@@ -253,7 +257,7 @@ span {
 }
 
 .other-footer .container .name,
-.other-footer .container .main-nav, {
+.other-footer .container .main-nav {
     flex-direction: row;
     display: inline-block;
 
