@@ -6,6 +6,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   background: lightgrey;
   margin: 0;
+  transition: all 0.7s;
   /* width: 100%; */
   /* padding: 0; */
 }
@@ -16,6 +17,9 @@ body {
 img {
   max-width: 100%;
 }
+#coding {
+  width: 50%;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -24,6 +28,19 @@ a {
 
 a:hover {
   color: darkgrey;
+}
+.skills ul li {
+  text-decoration: none;
+  display: inline-block;
+  background: lightblue;
+  width: 120px;
+  border-radius: 1em;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.skills ul li:hover {
+  background: teal;
+  transition: all 0.8s;
 }
 .main-nav li a {
   /* margin-right: 1px;
@@ -68,6 +85,7 @@ a:hover {
 }
 .content {
   margin-top: 4rem;
+  padding-bottom: 1rem;
   /* padding-top: 1em; */
   /* padding-left: 0; */
   /* width: 100%; */
@@ -94,7 +112,9 @@ a:hover {
   margin-top: 125px;
 
 }
-
+.skills {
+  margin: auto;
+}
 .end-content {
   /* background: lightgrey; */
   text-align: center;
@@ -112,20 +132,27 @@ span {
   font-weight: bold;
 }
 
-footer {
+.phone-footer {
   border-top: 2px solid grey;
-  padding: 35px 15px;
+  padding: 0px 15px;
   margin: 0 15px;
+  direction: rtl;
+  font-size: .7rem;
   /* flex-direction: row;
   display: inline-block; */
   /* text-align: center; */
+}
+.footername {
+  float: left;
 }
 #backtotop {
   float:right;
   /* padding-bottom: 30px */
 }
 
-
+.other-footer {
+  display: none;
+}
 
 
 
@@ -209,7 +236,35 @@ footer {
 .end-content p {
   font-size: 1.3rem;
 }
+.phone-footer {
+  display: none;
+}
+.other-footer {
+  display: contents;
+  font-size: .9rem;
+  border-top: 20px solid black;
+}
+.other-footer .container {
+  border-top: 2px solid grey;
+}
+.other-footer .container .main-nav li a {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
 
+.other-footer .container .name,
+.other-footer .container .main-nav, {
+    flex-direction: row;
+    display: inline-block;
+
+}
+.other-footer .container .name {
+  float: left;
+}
+.other-footer .container .main-nav {
+  padding-top: 10px;
+  float: right;
+}
 }
 
 @media (min-width: 1024px) {
@@ -245,5 +300,8 @@ footer {
   }
   .wrap p {
     font-size: 1.2rem;
+  }
+  .skills p {
+    font-size: 1.5rem;
   }
 }
